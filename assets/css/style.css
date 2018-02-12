@@ -14,6 +14,10 @@ a, a:hover, a:focus {
 	color: inherit;
 }
 
+button, button:focus {
+	outline: none
+}
+
 .nav_logo a {
 	color: #464d55;
 	font-size: 12px;
@@ -262,8 +266,6 @@ address {
 	background-color: #fff;
 	margin-bottom: 20px;
 	padding: 5px;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
 }
 
 .bar_inner {
@@ -271,8 +273,11 @@ address {
 	height: 50px;
 	background-color: #fece1a;
 	line-height: 50px;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
+}
+
+.bar_outter:hover {
+	background-color: #181A1C;
+	transition: all 2s ease;
 }
 
 .p90 {
@@ -299,6 +304,7 @@ address {
 	width: 100%;
 	background-color: #fff;
 	height: 300px;
+	margin-top: -20px;
 }
 
 .box_title {
@@ -329,11 +335,76 @@ address {
     line-height: 60px;
     padding: 5px;
     margin: auto;
-	transition: border .5 ease-in;
 	background-color: transparent;
 }
 
 .button_wrapper:hover {
 	border: 5px solid #FECE1A;
-	transition: border .5 ease-in;
+	transition: border .5s ease-in;
+}
+
+.bar_text {
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 20px;
+}
+
+.review {
+    font-size: 20px;
+    width: 1000px;
+    margin: 0px auto;
+    text-align: center;
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: gray;
+}
+
+.client_image {
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.client_name {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+    color: gray;
+}
+
+.client_prof {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 15px;
+    color: gray;
+}
+
+.bullet_button_group {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.bullet_button_group button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #808B91;
+    margin: 0px 2px;
+}
+
+.active {
+	background-color: #3F58FD !important;
+	transition: background-color 1s ease;
+}
+
+.cat_active {
+	background-color: #181A1C !important;
+	color: white;
+	transition: background-color 1s ease;
 }
